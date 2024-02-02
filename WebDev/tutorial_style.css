@@ -1,0 +1,134 @@
+body{
+    background-image: url("Images/bgi.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* This will apply to all h1 in your html document */
+h1{
+    color:red;
+    /* Just in case the font does not work on a browser, it will use the second one, and or the third one if the second one is not available */
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan dotted underline;
+    font-size: 18x;
+    border-top-style: dotted;
+    border-bottom-style: underline;
+    border-left-style: double;
+    border-right-style: dotted;
+    border-left-width: 10px;
+    border-left-color: green;
+}
+
+/* with id, you can target specific header titles or paragraphs */
+
+
+#p2{
+    color: green;
+    font-family: "consolas", sans-serif;
+    border-style: inset outset;
+    border-width: 5px;
+    border-color: gold;
+    /* higher the number, the smoother the rounding of corners */
+    border-radius: 10px;
+    /*spacing
+             top  right bottom left*/
+    padding: 10px 50px 10px 100px;
+    background: linear-gradient(to right,burlywood, skyblue);
+    background-color: burlywood;   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* elements by class */
+.odd{
+    color:tomato
+}
+
+
+
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+
+    background: linear-gradient(to top,burlywood, skyblue);  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding: 10px;
+    /* any element surround this will be push accordingly */
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+
+    background: linear-gradient(to bottom,burlywood, skyblue);  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#img1{
+    float: right;
+}
+
+#img2{
+    float: right;
+}
+
+#img3{
+    float: right;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+    background: tomato;
+    float: left;
+    clear: both;
+}
+
+#para1{
+    float: left;
+    clear: both;
+}
+
+#para2{
+    clear: left
+}
+
+#para3{
+    clear: left
+}
+
+
+#box01{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+
+    position: relative;
+}
+
+#box02{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+}
