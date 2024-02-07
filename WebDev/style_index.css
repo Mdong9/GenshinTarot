@@ -1,0 +1,20 @@
+body{
+    background-image: url("Images/bgi.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* This will apply to all h1 in your html document */
+h1{
+    color: goldenrod;
+    /* Just in case the font does not work on a browser, it will use the second one, and or the third one if the second one is not available */
+    font-family: "Press Start 2P", "consolas", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: cyan dotted;
+    font-size: 15px;
+
+/* with id, you can target specific header titles or paragraphs */
