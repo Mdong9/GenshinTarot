@@ -7,14 +7,48 @@ body{
     
 }
 
-/* This will apply to all h1 in your html document */
-h1{
+/* Menu */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /* text-align: right; */
+}
+
+.menu li {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*
+.active {
+    background-color: #04AA6D;
+}
+*/
+
+.menu li a:hover{
+    background-color: #111;
+}
+
+/* Logo */
+
+
+
+/* Title */
+.title {
     color: goldenrod;
     /* Just in case the font does not work on a browser, it will use the second one, and or the third one if the second one is not available */
     font-family: "Press Start 2P", "consolas", sans-serif;
     font-style: italic;
     font-weight: bold;
     text-decoration: cyan dotted;
-    font-size: 15px;
-
-/* with id, you can target specific header titles or paragraphs */
+    font-size: 25px;
+    text-align: left;
+    display: inline;
+}
