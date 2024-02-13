@@ -1,54 +1,96 @@
-body{
-    background-image: url("Images/bgi.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Menu */
-.menu {
-    list-style-type: none;
-    margin: 0;
+*{
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    /* text-align: right; */
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: none;
 }
 
-.menu li {
-    display: block;
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+img{
+    width: 100%;
+    display: flex;
+}
+
+
+a{
     text-decoration: none;
 }
 
-/*
-.active {
-    background-color: #04AA6D;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000435;
+    
+    background-image: url("Images/genshin_tarot.jpg"); 
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;    
+    
 }
-*/
 
-.menu li a:hover{
-    background-color: #111;
+nav{
+    max-width: 90%;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-/* Logo */
-
-
-
-/* Title */
-.title {
-    color: goldenrod;
-    /* Just in case the font does not work on a browser, it will use the second one, and or the third one if the second one is not available */
-    font-family: "Press Start 2P", "consolas", sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: cyan dotted;
-    font-size: 25px;
-    text-align: left;
-    display: inline;
+.nav-logo{
+    max-width: 100px;
 }
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin:auto;
+}
+
+
+
+.links a{
+    position:relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+/* lines appear when hover above the links */
+.links a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+
+
