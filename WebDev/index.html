@@ -40,9 +40,9 @@
             <!-- links to go to other Page-->
             <ul class="nav-links">
                 <li class="links"><a href="#">Home</a></li>
-                <li class="links"><a href="#">Blog</a></li>
-                <li class="links"><a href="#">Characters</a></li>
-                <li class="links"><a href="#">About</a></li>
+                <li class="links"><a href="#">Features</a></li>
+                <li id='region' class="links"><a href="#">Characters</a></li>
+                <li id='team-info' class="links"><a href="#">About</a></li>
             </ul>
 
             <button class="btn"> Download </button>
@@ -52,7 +52,7 @@
             <div class="content">
                 <span class="blur"></span>
                 <span class="blur"></span>
-                <h4> THEORY CRAFT AT THE PALM OF YOUR HAND </h4>
+                <h4> THEORY CRAFTING AT THE PALM OF YOUR HAND </h4>
                 <h1> Hi, we are the <span> Genshin Tarot RCOS</span> team</h1>
                 <p> Are you too lazy to do the math while you theory crafting your perfect deck in the critically acclaimed Genshin 
                     Tarot Board game? We are here to help you with that. Our goal is to allow you to do your own theory crafting 
@@ -67,7 +67,7 @@
                 
             </div>
             
-            <div class="images">
+            <div class="image">
                 <img src="Images/genshin_tarot.jpg">
             </div>
         </header>
@@ -186,7 +186,7 @@
         </section>
 
         <!-- section.container will give you <section class="container"></section> -->
-        <section class="container">
+        <section class="member-container">
             <!-- h2.header will give you <h2 class="header"></h2>-->
             <h2 class="header"> MEET THE TEAM </h2>
             <p class="sub-header">
@@ -199,106 +199,99 @@
                         <h4>
                             Patrick Nguyen
                         </h4>
+                        <img src="Images/assert_dominance.jpg">
                         <h3>
                             Web Developer
                         </h3>
+                    </div>
+                </div>
 
 
+
+                <div class="card">
+                    <div class="content">
                         <h4>
                             Michael Dong
                         </h4>
+                        <img src="Images/assert_dominance.jpg">
                         <h3>
-                            Programmer
-                        </h3>
+                            Back-end Developer
+                         </h3>
+                    </div>
+                </div>
+                
 
-
+                <div class="card">
+                    <div class="content">
                         <h4>
                             Roger Luo
                         </h4>
+                        <img src="Images/assert_dominance.jpg">
                         <h3>
-                            Artist
+                            Designer
                         </h3>
-
-
                     </div>
                 </div>
             </div>
+            
+            <div class="member-about">
+                <button class="btn" onclick="location.href=''">
+                    More
+                </button>
+            </div>  
         </section>
         
+        <!-- website footer-->
+        <footer class="container">
+            <span class="blur"></span>
+            <span class="blur"></span>
 
+            <div class="column">
+                <div class="logo">
+                    <img src="Images/assert_dominance.jpg">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+
+                <div class="socials">
+                    <a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+                    <a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+                    <a href="https://twitter.com/home"><i class="ri-twitter-line"></i></a>
+                    <a href="https://discord.com/"><i class="ri-discord-line"></i></a>
+                </div>
+            </div>
+
+            <div class="column">
+                <h4>RCOS</h4>
+                <a href="https://science.rpi.edu/computer-science/programs/undergrad/bs-computerscience/rensselaer-center-open-source-rcos">About</a>
+                <a href="https://new.rcos.io/">Main Page</a>
+                <a href="https://new.rcos.io/handbook/?semester=202401">Handbook</a>
+            </div>
+
+            <div class="column">
+                <h4>About us</h4>
+                <a href="#">Blogs</a>
+                <a href="#">Channels</a>
+                <a href="#">Team</a>
+            </div>
+
+            <div class="column">
+                <h4>Contact</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </footer>
+
+        <div class="copyright">
+            Copyright © 2024 Genshin Tarot RCOS Team. All Rights Reserved.
+        </div>
+        
         <!-- JavaScript-->
         <script src="script.js"></script>
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- this is an image tag, you can adjust the width and height accordingly with its attributes 
-        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2599136356" target=_blank>
-            <img src="Images/genshin_tarot.jpg" height="500" width="500" alt="This is a picture of the genshin tarot cover" title="Broke Astrologist LMAO 😂"> 
-        </a>
-        -->
-
-        
-        
-        <!-- Table -->
-        <h3> 
-            <span style="color: black; background-color: red"> RCOS Schedule </span> 
-        </h3>
-        <!-- 'th' tag for table header and 'td' tag is for data header-->
-        <table bgcolor = 'black' width = '700'>
-            <tr bgcolor = 'grey'>
-                <th width = '100'>Monday</th>
-                <th width = '100'>Tuesday</th>
-                <th width = '100'>Wednesday</th>
-                <th width = '100'>Thursday</th>
-                <th width = '100'>Friday</th>
-                <th width = '100'>Saturday</th>
-                <th width = '100'>Sunday</th>
-            </tr>
-
-            <tr bgcolor = 'lightgrey' align = 'center'>
-                <td> No class </td>
-                <td> 4:00-6:00pm </td>
-                <td> No class </td>
-                <td> No class </td>
-                <td> 4:00-6:00pm </td>
-                <td> No class </td>
-                <td> No class </td>
-            </tr>
-        </table>
-        
-        
     </body>
 
 
