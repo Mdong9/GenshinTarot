@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title> Genshin Tarot </title>
+        <link rel="stylesheet" href="tutorial_style.css">
+
+        <!-- tell the browser what type of encoding are we using-->
+        <meta charset="UTF-8">
+
+        <!-- meta tag can only be place within the header section -->
+        <meta name="description" content="This webpage is dedicate to contain information about our project of recreating Genshin Tarot using Python">
+
+        <!-- For search optimization-->
+        <meta name="keywords" content="RCOS, Genshin Tarot, Project">
+
+        <!-- author name if u choose to-->
+        <meta name="author" content="Patrick Nguyen">
+        
+        <!-- For scaling to mobile devices' resolution -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Refresh page after given amount of seconds-->
+        <meta http-equiv="refresh" content="60">
+
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+
+        
+        <!-- This is the body of the page -->
+        <h1>Welcome to Genshin Tarot project </h1>
+        <hr>
+
+        <!-- this is an image tag, you can adjust the width and height accordingly with its attributes -->
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2599136356" target=_blank>
+            <img src="Images/genshin_tarot.jpg" height="500" width="500" alt="This is a picture of the genshin tarot cover" title="Broke Astrologist LMAO 😂"> 
+        </a>
+
+        <p> Our project is a fan-made of a fan-made project of the Genshin Impact </p>
+
+        <!-- "target" in the hyperlink tag (<a>) here is to specifies where to open the linked document. _blank here is to open up a linked document on a blank page.-->
+        <p> 
+            This is just a simulation of the original game, which can be found <i><b><a href="https://genshintarot.carrd.co/" target=_blank> here </a></b></i>
+        </p>
+
+        
+
+        <!-- <script src="script.js"> </script> -->
+
+        <!-- unordered list -->
+        <h1>Directory</h1>
+        <ul>
+            <li>
+                <a href="home.html"> Home</a>
+            </li>
+                <ul>
+                    <li> Juan </li>
+                    <li> Dos </li>
+                    <li> Tres </li>
+                </ul>
+        </ul>
+
+
+        <!-- ordered list -->
+        <h1>Directory</h1>
+        <ol type="A">
+            <li>
+                <a href="home.html"> Home</a>
+            </li>
+        </ol>
+
+        <!-- description list -->
+        <h1>Directory</h1>
+        <dl>
+            <dt> <a href="home.html"> Home</a> </dt> 
+            <dd>This is the link to get to the homepage </dd>
+        </dl>
+
+        <!-- Table -->
+        <h3> 
+            <span style="color: black; background-color: red"> RCOS Schedule </span> 
+        </h3>
+        <!-- 'th' tag for table header and 'td' tag is for data header-->
+        <table bgcolor = 'black' width = '700'>
+            <tr bgcolor = 'grey'>
+                <th width = '100'>Monday</th>
+                <th width = '100'>Tuesday</th>
+                <th width = '100'>Wednesday</th>
+                <th width = '100'>Thursday</th>
+                <th width = '100'>Friday</th>
+                <th width = '100'>Saturday</th>
+                <th width = '100'>Sunday</th>
+            </tr>
+
+            <tr bgcolor = 'lightgrey' align = 'center'>
+                <td> No class </td>
+                <td> 4:00-6:00pm </td>
+                <td> No class </td>
+                <td> No class </td>
+                <td> 4:00-6:00pm </td>
+                <td> No class </td>
+                <td> No class </td>
+            </tr>
+        </table>
+        
+        <!--
+
+
+
+
+
+            
+        -->
+        <!-- 
+            "span" tag add markup to text or portion of a document
+            "div" tag defines a division of a document
+        -->
+        <div style= "color:aqua; background-color: black">
+            <p>This is paragraph 1</p>
+            <p>This is paragraph 2</p>
+            <p>This is paragraph 3</p>
+        </div>
+
+        <p style= "color:black; background-color: aqua">This is paragraph 4</p>
+
+        <!-- iframe: embeded content from another source into an HTML document
+            ex: used for ads, hacking techniques -->
+        <iframe style="border:0" src="home.html" width="1500" height="250"></iframe>
+
+        <!-- Buttons -->
+        <!-- <a href="home.html">
+            <button onlick="doSomething()" type="button" style="color:black; background-color: red; border-radius:5px"> clicc me pls trust me </button>
+        </a>
+        -->
+
+        <button onclick="doSomething()" style="color:black; background-color: red; border-radius:5px"> clicc me pls trust me </button>
+        
+        <p id="hello"> Hello </p>
+
+        <script>
+            function doSomething() {
+                document.getElementById("hello").innerHTML = "It's me";
+            }
+        </script>'
+        
+        <!-- Forms -->
+        <!-- You can send info to other pages using php and stuff like that -->
+        <form action="action_page.php" method="POST">
+            <div>
+                <label for="fname"> First name: </label>
+                <input type="text" id="fname" name="fname" placeholder="AUGHHH" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="lname"> Last name: </label>
+                <input type="text" id="lname" name="lname" placeholder="BOO-WOMP" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pass"> Password: </label>
+                <input type="password" id="pass" name="pass" placeholder="SECRET LETTERS" maxlength="12" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" placeholder="gibUrEmail@gmail.com" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="phone"> Telephone: </label>
+                <input type="tel" id="phone" name="phone" placeholder="0000000000" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="bdate"> Birthdate: </label>
+                <input type="date" id="bdate" name="bdate" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="quant"> Quantity: </label>
+                <input type="number" id="quant" name="quant" min="0" max="100" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Mr."> Mr. </label>
+                <input type="radio" id="Mr." name="title">
+
+                <label for="Mrs."> Mrs. </label>
+                <input type="radio" id="Mrs." name="title">
+
+                <label for="PhD."> PhD. </label>
+                <input type="radio" id="PhD.">
+            </div>
+
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+
+        <!-- CSS tutorial -->
+        <h1> This is my website </h1>
+
+
+        <p id="p1" class="odd"> Paragraph 1 </p>
+        <p id="p2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repudiandae expedita accusantium rem necessitatibus? Ipsa dolores pariatur eaque possimus praesentium eligendi sequi placeat ex ratione eius, modi laudantium consectetur eveniet. </P>
+        <p id="p3" class="odd"> Paragraph 3 </P>
+
+        <div id="box1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dicta cum ipsum necessitatibus placeat aperiam saepe, facilis laborum cumque nostrum, aut magnam labore dolorem? Architecto voluptates est praesentium perferendis vel.
+        </div>
+
+        <div id="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti cum minus, optio odit natus impedit sapiente quidem possimus vero, minima enim illo inventore commodi quibusdam quae recusandae, temporibus dolor.
+        </div>
+
+        <!-- float = position an element to the left or right side of a container
+            ex: Popular for wrapping elements around images -->
+        
+        <img id= "img1" src= "Images/yao_yao_gun.png" width="25%">
+        <img id= "img2" src= "Images/hu_tao_gun.png" width="25%">
+        <img id= "img3" src= "Images/loli_terror.png" width="25%">
+        
+        
+        <div class = "box">
+            Box 1 here
+        </div>
+
+        <div class = "box">
+            Box 2 here
+        </div>
+
+        <div class = "box">
+            Box 3 here
+        </div>
+
+        <br>
+
+        <p id = "para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, porro ipsam veritatis odio cumque ratione voluptatem omnis recusandae tempora soluta dicta ea harum dolor nisi incidunt non possimus quisquam quaerat.
+        </p>
+
+        <p id = "para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, porro ipsam veritatis odio cumque ratione voluptatem omnis recusandae tempora soluta dicta ea harum dolor nisi incidunt non possimus quisquam quaerat.
+        </p>
+
+        <p id = "para3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, porro ipsam veritatis odio cumque ratione voluptatem omnis recusandae tempora soluta dicta ea harum dolor nisi incidunt non possimus quisquam quaerat.
+        </p>
+
+
+
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        
+        <!-- Group up box-->
+        <div id = "box01">
+            <div id = "box02">
+                
+            </div>
+        </div>
+        
+
+
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id error, culpa voluptates explicabo distinctio ullam rerum! Aspernatur officia animi corporis minima totam, eius explicabo eaque ducimus est dicta deleniti?</p>
+
+
+        <button> Click me pls</button>
+
+
+        <!-- this is an image tag, you can adjust the width and height accordingly with its attributes 
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2599136356" target=_blank>
+            <img src="Images/genshin_tarot.jpg" height="500" width="500" alt="This is a picture of the genshin tarot cover" title="Broke Astrologist LMAO 😂"> 
+        </a>
+        -->
+
+        <div class="calendar">
+            <!-- Table -->
+            <h3> 
+                <span style="color: black; background-color: red"> RCOS Schedule </span> 
+            </h3>
+            <!-- 'th' tag for table header and 'td' tag is for data header-->
+            <table bgcolor = 'black' width = '700'>
+                <tr bgcolor = 'grey'>
+                    <th width = '100'>Monday</th>
+                    <th width = '100'>Tuesday</th>
+                    <th width = '100'>Wednesday</th>
+                    <th width = '100'>Thursday</th>
+                    <th width = '100'>Friday</th>
+                    <th width = '100'>Saturday</th>
+                    <th width = '100'>Sunday</th>
+                </tr>
+
+                <tr bgcolor = 'lightgrey' align = 'center'>
+                    <td> No class </td>
+                    <td> 4:00-6:00pm </td>
+                    <td> No class </td>
+                    <td> No class </td>
+                    <td> 4:00-6:00pm </td>
+                    <td> No class </td>
+                    <td> No class </td>
+                </tr>
+            </table>
+
+        </div>
+        
+
+    </body>
+
+
+    
+</html>
