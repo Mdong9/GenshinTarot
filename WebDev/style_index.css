@@ -392,9 +392,6 @@ footer .column > a:hover{
 
 /* make the website more responsive when adjust according to the size of the browser */
 @media (width < 900px){
-    .nav-links{
-        display: none;
-    }
     header{
         grid-template-columns: repeat(1, 1fr);
     }
