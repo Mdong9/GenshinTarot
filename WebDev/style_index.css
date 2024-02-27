@@ -170,7 +170,7 @@ header .image::before{
     line-height: 20rem;
     color: red;
     opacity: 0.5;
-    z-index: -100;
+    z-index: 100;
 }
 
 header .image img{
@@ -211,7 +211,6 @@ section .header {
 
 .features .card span{
     display: inline-block;
-    background: #1e40af;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -240,10 +239,12 @@ section .header {
     color: #1e40af;
 }
 
-/* adjust the size of the image in each card */
+/* adjust the size of the image in each card 
 .features .card img{
-    max-width: 100px;
+    display: inline-block;
 }
+*/
+
 
 .sub-header{
     max-width: 600px;
@@ -396,7 +397,7 @@ footer .column > a:hover{
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
-    columns: #fff;
+    color: #fff;
     font-size: 0.8rem;
     text-align: center;
 }
