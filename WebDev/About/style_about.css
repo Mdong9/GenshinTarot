@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-
+html {
+    background-color: #00011e;
+}
 
 *{
     margin: 0;
@@ -9,17 +11,28 @@
 }
 
 img{
-    width: 100%;
-    display: flex;
+    max-width: 100%;
+    display: block;
 }
 
+p{
+    color: #fff
+}
 
 a{
     text-decoration: none;
 }
 
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700; /* for demo only */
+    text-transform: uppercase; /* for demo only */
+    min-height: 300vh; /* for demo only */
+}
+
 nav{
-    position: sticky;
     max-width: 90%;
     margin: auto;
     padding: 2rem 1rem;
@@ -80,8 +93,6 @@ nav{
     background-color: #1e40af;
 }
 
-
-
 .gradient{
     position: absolute;
     width: 100%;
@@ -91,4 +102,106 @@ nav{
     left: 0;
     right: 0;
     background: linear-gradient(to bottom, rgba(17, 26, 37, 0.8), rgba(37, 36, 37, 0.2));
+}
+
+/* Animation */
+@keyframes parallax {
+    to {
+        /* parallax effect on the vertical axis */
+        transform: translateY(calc(var(--parallax-speed) * 100px));
+    }
+}
+
+/* Parallax Effect */
+.parallax{
+    position: relative;
+    min-height: 75vh;
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+
+.parallax > *{
+    /* to all of the children in the parallax class */
+    grid-area: stack;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+
+.parallax_bg{
+    --parallax-speed: -1;
+    z-index: -10;
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.parallax > img {
+    width: 100%;
+}
+
+.parallax_foreground-front,
+.parallax_foreground-back {
+    --parallax-speed: -1;
+    z-index: 999;
+    align-self: end;
+}
+
+.parallax_foreground-back {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  mix-blend-mode: hard-light;
+}
+
+
+.team-about {
+    margin-block-start: max(20vh, 8rem);
+}
+
+.primary-header .team-about {
+    --parallax-speed: 10;
+    z-index: 10;
+}
+
+.wrapper {
+    width: min(65rem, 100% - 4rem);
+    margin-inline: auto;
+}
+
+.primary-header {
+    padding-block: 2rem;
+}
+
+.primary-header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-about_title {
+    font-size: 6rem;
+    max-width: 10ch;
+    line-height: 1;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+
+    > span {
+        font-style: normal;
+        font-size: 0.5em;
+        display: block;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: black;
+        z-index: -1;
+        scale: 2;
+        opacity: 0.5;
+        filter: blur(5rem);
+        translate: -50%;
+    }
 }
