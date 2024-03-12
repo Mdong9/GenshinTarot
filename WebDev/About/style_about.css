@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
-html {
-    background-color: #00011e;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -25,11 +20,13 @@ a{
 
 body {
     margin: 0;
+    /*
     font-family: "Rubik", sans-serif;
     font-size: 1.25rem;
-    font-weight: 700; /* for demo only */
-    text-transform: uppercase; /* for demo only */
-    min-height: 300vh; /* for demo only */
+    font-weight: 700;
+    text-transform: uppercase;
+    min-height: 300vh;
+    */
 }
 
 nav{
@@ -48,6 +45,7 @@ nav{
 
 
 .nav-links{
+    font-family: 'Poppins', sans-serif;
     list-style: none;
     display: flex;
     align-items: center;
@@ -104,104 +102,57 @@ nav{
     background: linear-gradient(to bottom, rgba(17, 26, 37, 0.8), rgba(37, 36, 37, 0.2));
 }
 
-/* Animation */
-@keyframes parallax {
-    to {
-        /* parallax effect on the vertical axis */
-        transform: translateY(calc(var(--parallax-speed) * 100px));
-    }
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
 }
 
-/* Parallax Effect */
-.parallax{
+header {
     position: relative;
-    min-height: 75vh;
-    display: grid;
-    grid-template-areas: "stack";
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
 }
 
-
-.parallax > *{
-    /* to all of the children in the parallax class */
-    grid-area: stack;
-    animation: parallax linear;
-    animation-timeline: scroll();
-}
-
-.parallax_bg{
-    --parallax-speed: -1;
-    z-index: -10;
-    min-height: 100%;
+.background,
+.midground,
+.foreground {
+    position: absolute;
+    height: 100%;
     width: 100%;
     object-fit: cover;
-
+    z-index: -1;
 }
 
-.parallax > img {
-    width: 100%;
+/* for translateZ(x), the lower the x, the "further away the object is */
+.background {
+    top: -400px;
+    transform: translateZ(-15px) scale(2.55);
 }
 
-.parallax_foreground-front,
-.parallax_foreground-back {
-    --parallax-speed: -1;
-    z-index: 999;
-    align-self: end;
+.midground {
+    transform: translateZ(-10px) scale(2.05);
 }
 
-.parallax_foreground-back {
-  transform: scaleY(1.2);
-  transform-origin: bottom;
-  mix-blend-mode: hard-light;
+.foreground {
+    transform: translateZ(-5px) scale(1.55);
 }
 
 
-.team-about {
-    margin-block-start: max(20vh, 8rem);
+.title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
 }
 
-.primary-header .team-about {
-    --parallax-speed: 10;
-    z-index: 10;
-}
-
-.wrapper {
-    width: min(65rem, 100% - 4rem);
-    margin-inline: auto;
-}
-
-.primary-header {
-    padding-block: 2rem;
-}
-
-.primary-header_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.team-about_title {
-    font-size: 6rem;
-    max-width: 10ch;
-    line-height: 1;
-    font-style: italic;
-    font-weight: 900;
-    position: relative;
-
-    > span {
-        font-style: normal;
-        font-size: 0.5em;
-        display: block;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: black;
-        z-index: -1;
-        scale: 2;
-        opacity: 0.5;
-        filter: blur(5rem);
-        translate: -50%;
-    }
+section{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
 }
