@@ -103,8 +103,8 @@ if __name__ == '__main__':
 
   enemy = Enemy()
   enemy.setAttack(5)
-  # enemy.setAttackType("normal")
-  enemy.setAttackType("oh my godd i love hamborgor")
+  enemy.setAttackType("normal")
+  # enemy.setAttackType("oh my godd i love hamborgor")
   print(f"Enemy attack is: {enemy.getAttack()}")
   print(f"Enemy type is: {enemy.getAttackType()}")
 
