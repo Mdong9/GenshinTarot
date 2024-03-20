@@ -227,6 +227,7 @@ footer .column .logo{
 footer .column p{
     color: #ccc;
     margin-bottom: 2rem;
+    font-size: 1rem;
 }
 
 footer .column .socials{
@@ -270,6 +271,7 @@ footer .column > a{
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.5s ease-in-out;
+    font-size: 1rem;
 }
 
 footer .column > a:hover{
